@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/sidebar/Sidebar';
 import Content from './components/Content';
 import Footer from './components/Footer';
 function App() {
