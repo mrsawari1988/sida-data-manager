@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function MenuItemLink({ title, link, icon }) {
+export default function MenuItemLink({ title, link, icon, showArrow }) {
     return (
         <a href={link} className='nav-link'>
             <i className={`nav-icon fa ${icon}`}></i>
             <p>
                 {title}
-                <i className={`right fa fa-angle-left`}></i>
+                {showArrow && <i className={`right fa fa-angle-left`}></i>}
             </p>
         </a>
     );

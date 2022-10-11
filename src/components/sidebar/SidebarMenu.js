@@ -38,7 +38,7 @@ const menuItems = [
 export default function SidebarMenu() {
     return (
         <ul
-            className='nav nav-pills nav-sidebar flex-column'
+            class='nav nav-pills nav-sidebar flex-column'
             data-widget='treeview'
             role='menu'
             data-accordion='false'
