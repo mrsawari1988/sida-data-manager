@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
-import Content from './components/Content';
 import Footer from './components/Footer';
+import MainContent from './components/MainContent';
 function App() {
     // const [token, setToken] = useState('');
     // const [studentsUpdateStatus, setStudentsUpdateStatus] = useState('Recievenig');
@@ -61,7 +61,7 @@ function App() {
 
             <Navbar />
             <Sidebar />
-            <Content />
+            <MainContent />
             <Footer />
         </div>
     );
