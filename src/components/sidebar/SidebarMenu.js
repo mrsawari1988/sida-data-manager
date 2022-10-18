@@ -4,27 +4,15 @@ import MenuItem from './MenuItem';
 const menuItems = [
     {
         id: 1,
-        title: 'داشبوردها',
-        icon: 'fa-dashboard',
+        title: 'پایگاه داده',
+        icon: 'fa-database',
         link: '#',
         submenu: [
             {
                 id: 2,
-                title: 'داشبورد اول',
+                title: 'ایجاد پایگاه داده',
                 icon: 'fa-circle-o',
-                link: '#',
-            },
-            {
-                id: 3,
-                title: 'داشبورد دوم',
-                icon: 'fa-circle-o',
-                link: '#',
-            },
-            {
-                id: 4,
-                title: 'داشبورد سوم',
-                icon: 'fa-circle-o',
-                link: '#',
+                link: '/create-database',
             },
         ],
     },
