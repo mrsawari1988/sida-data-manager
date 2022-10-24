@@ -26,7 +26,7 @@ const menuItems = [
 export default function SidebarMenu() {
     return (
         <ul
-            class='nav nav-pills nav-sidebar flex-column'
+            className='nav nav-pills nav-sidebar flex-column'
             data-widget='treeview'
             role='menu'
             data-accordion='false'
