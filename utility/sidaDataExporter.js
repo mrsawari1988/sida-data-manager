@@ -4,15 +4,15 @@ const { requiredFields } = require('./fields');
 
 const optionCreator = async (token) => {
     const data = {
-        take: 422,
+        take: 1000,
         skip: 0,
         page: 1,
-        pageSize: 422,
+        pageSize: 1000,
     };
     const options = {
         headers: {
             Authorization: 'Bearer ' + token,
-            'Content-Type': 'application/json;charset=UTF-8',
+            'Content-Type': 'application/json',
         },
     };
     return [data, options];
