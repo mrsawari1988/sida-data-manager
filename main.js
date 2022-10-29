@@ -11,14 +11,6 @@ const Class = require('./db/classModel');
 const Score = require('./db/scoresModel');
 const Teacher = require('./db/teacherModel');
 
-const {
-    getStudents,
-    getClasses,
-    getTeachers,
-    getCourses,
-    newDynamicSidaExporter,
-} = require('./utility/sidaDataExporter');
-
 const createWindow = () => {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
@@ -89,7 +81,7 @@ const createWindow = () => {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-Class.hasMany(Student, { sourceKey: 'classId', foreignKey: 'classRoomId' });
+// Class.hasMany(Student, { sourceKey: 'classId', foreignKey: 'classRoomId' });
 sequelize
     .sync()
     .then((res) => {

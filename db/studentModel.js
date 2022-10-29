@@ -4,7 +4,7 @@ const sequelize = require('./dbConfig');
 const Student = sequelize.define('student', {
     birthDate: DataTypes.INTEGER,
     birthPlace: DataTypes.STRING,
-    classRoomId: DataTypes.INTEGER,
+    classRoomId: { type: DataTypes.INTEGER, allowNull: true },
     fatherMobileNumber: DataTypes.INTEGER,
     fatherName: DataTypes.STRING,
     firstName: DataTypes.STRING,

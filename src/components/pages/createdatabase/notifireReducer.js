@@ -41,7 +41,7 @@ export const notifireReducer = (state, action) => {
             return {
                 ...state,
                 students: {
-                    ...state.sudents,
+                    title: 'اطلاعات دانش آموزان',
                     status: 'تمام شد',
                     badgeColour: 'success',
                     badgeIcon: 'fa-check-square',
